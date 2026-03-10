@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarjetas Marketing Digital</title>
+    <link rel="icon" href="./img/" type="image/png">
+
+    <style>
+        body {
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        .contenedor {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 50px;
+        }
+
+        .card {
+            width: 520px;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            font-family: Arial;
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+            transition: 0.4s;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #00323ce7;
+            color: white;
+            padding: 20px;
+            transition: 0.3s;
+            
+        }
+
+        .card-title {
+            font-size: 29px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        /* texto oculto */
+        .card p {
+            font-size: 17.9px;
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.4s;
+        }
+
+        /* mostrar texto al pasar mouse */
+        .card:hover p {
+            opacity: 1;
+            max-height: 200px;
+        }
+
+        /* animación imagen */
+        .card:hover img {
+            transform: scale(1.08);
+        }
+
+        /* cambio de color */
+        .card:hover .overlay img{
+            background: #00323cdf;
+           opacity: 0.9;
+            color: #ffffff;
+           
+            
+        }
+       
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="card">
+            <img src="./img/Con4.png">
+
+            <div class="overlay">
+                <div class="card-title">Conocimiento básico sobre<br> Marketing Digital</div>
+
+                <p>
+                   Comprender el y los conocimientos básicos y <br>fundamentales que reúne y conjunta el concepto de<br> Marketing Digital, así como su aplicación en contextos pedagógicos, que puedan ser llevados al contexto del<br> nuevo mercado digital.
+                </p>
+
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="./img/Con5.png">
+
+            <div class="overlay">
+                <div class="card-title">Herramientas del Mercado Digital</div><br>
+
+                <p>
+                    Conocer ejemplos básicos de herramientas como <br>Google Analytics,
+                    Keyword Planner, Sprout Social y <br>demás recursos, así como su utilidad
+                    en el apoyo en la planeación, ejecución, análisis y optimización de
+                    las <br>campañas de marketing, lo cual permite conocer<br> el rendimiento
+                    de sus ventas y la expansión de sus sitios web.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
